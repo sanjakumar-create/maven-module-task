@@ -1,17 +1,26 @@
-package org.example;
+package org.example; // Make sure this matches your actual folder structure!
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import com.example.math.Addition; // This imports your class from the other module!
+
+/**
+ * The main application class for the calculator.
+ */
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    /**
+     * The main entry point of the program.
+     * * @param args command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Starting the Calculator App...");
+
+        // 1. Create an instance of the Addition class from your math-core module
+        Addition addition = new Addition();
+
+        // 2. Use the method
+        int result = addition.add(15, 25);
+
+        // 3. Print the result
+        System.out.println("The result of 15 + 25 is: " + result);
     }
 }
