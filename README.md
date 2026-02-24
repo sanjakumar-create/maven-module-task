@@ -1,6 +1,7 @@
 
 
 
+
 # Maven Module Theory & Static Analysis Task
 
 ## 📖 Overview
@@ -74,3 +75,4 @@ Execute the `Main.java` class located in the `calculator-app` module to see the 
 ```
 
 ```
+
